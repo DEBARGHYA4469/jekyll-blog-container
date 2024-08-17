@@ -1,0 +1,105 @@
+---
+layout: post
+title: "Exploring the A* Pathfinding Algorithm"
+date: 2024-08-16 10:00:00 +0000
+categories: algorithms
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <p><em>Note: Some of the content in this blog post, including mathematical expressions and explanations, has been generated with the assistance of AI.</em></p>
+
+    <title>Exploring the A* Pathfinding Algorithm</title>
+    {% include custom-head.html %}
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Exploring the A* Pathfinding Algorithm</h1>
+            <p><em>Published on August 16, 2024</em></p>
+        </header>
+
+
+        <p> Problem: <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* Pathfinding Algorithm</a> </p> 
+
+        <p> <b> Problem Description: </b> The A* algorithm is used for finding the shortest path from a start node to a goal node in a weighted graph. It combines features of Dijkstra's algorithm and Greedy Best-First-Search, using heuristics to prioritize paths that seem promising.</p>
+
+        <br/>
+
+        <li><b>Technique (Basic A* Implementation)</b>: Check out the <a href="https://github.com/yourusername/astar/blob/main/basic_astar.py">basic implementation</a> </br></br>
+
+        <p> Technique provides a straightforward implementation of the A* algorithm, using a simple heuristic function. This method demonstrates the core principles of A* and is a great starting point for understanding how the algorithm works.</p>
+
+        <br/>
+        <details>
+            <summary>View Code</summary>
+                <pre>
+                <code>
+{% include blog1/sample.py %}
+                </code>
+                </pre>
+        </details>
+      
+    <br/>
+
+        <p> The A* algorithm relies on the following cost function to determine the most promising path:</p>
+
+        <p>
+        $$ f(n) = g(n) + h(n) $$
+        </p>
+
+        <p>Where:</p>
+        <ul>
+            <li> \( f(n) \) is the total estimated cost of the cheapest solution through node \( n \).</li>
+            <li> \( g(n) \) is the cost from the start node to \( n \). </li>
+            <li> \( h(n) \) is the heuristic estimate of the cost from \( n \) to the goal.</li>
+        </ul>
+
+        <br/>
+
+        <h3>Advanced Mathematical Concepts</h3>
+
+        <p> Let's explore some additional mathematical expressions that are relevant to optimization problems like A*.</p>
+
+        <h4>1. Integral Representation</h4>
+        <p> Consider the integral form of a continuous cost function:</p>
+
+        <p>
+        $$ \int_{a}^{b} \left( g(x) + h(x) \right) dx $$
+        </p>
+
+        <p> This represents the total cost over a continuous path from point \(a\) to \(b\).</p>
+
+        <h4>2. Summation Notation</h4>
+        <p> In the case of a discrete set of nodes, we might represent the total cost as a summation:</p>
+
+        <p>
+        $$ \sum_{i=1}^{n} \left( g(n_i) + h(n_i) \right) $$
+        </p>
+
+        <p> This sums the cost function over all nodes \(n_i\) from 1 to \(n\).</p>
+
+        <h4>3. Matrix Representation</h4>
+        <p> For more complex systems, a matrix can represent the state transitions. Consider the following matrix equation:</p>
+
+        <p>
+        $$ \mathbf{F} = \mathbf{G} + \mathbf{H} $$
+        </p>
+
+        <p> Where:</p>
+        <ul>
+            <li> \( \mathbf{F} \) is the matrix of total estimated costs.</li>
+            <li> \( \mathbf{G} \) is the matrix of actual costs from the start node.</li>
+            <li> \( \mathbf{H} \) is the matrix of heuristic estimates to the goal.</li>
+        </ul>
+
+        <br/>   
+
+        
+    </article>
+</body>
+</html>

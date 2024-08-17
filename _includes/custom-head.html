@@ -1,0 +1,79 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js"]
+    },
+    SVG: {
+      fontCache: 'global'
+    }
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    hljs.highlightAll();
+  });
+</script>
+
+<style>
+  body {
+    font-family: 'Times New Roman', serif;
+    background: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  summary {
+    text-align: left;
+    outline: none;
+    display: list-item;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  summary:hover {
+    background: #eaeaea;
+    border-color: #ccc;
+  }
+
+  pre {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+
+  pre code {
+    color: #333;
+  }
+
+  .mathjax-preview {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 0;
+    color: #333;
+  }
+</style>
