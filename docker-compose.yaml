@@ -6,6 +6,6 @@ services:
     ports:
       - "5000:4000"
     volumes:
-      - /mnt/c/Users/kdeb4/jekyll-blog-container/*:/home/dkundu/myblog
+      - /mnt/c/Users/kdeb4/jekyll-blog-container/:/home/dkundu/myblog
     command: bundle exec jekyll serve --host 0.0.0.0 --watch --force_polling --incremental
 
