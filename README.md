@@ -25,7 +25,7 @@ Welcome to the Jekyll Blog Containerization project! This project provides a Doc
 
    If you’re using Windows with WSL, create a symlink to the cloned repository. Open your WSL terminal and run: (note: Here <USER> is your windows username)
     ```bash
-    mkdir myblog && ln -s /mnt/c/Users/<USER>/jekyll-blog-container/* myblog
+    ln -s /mnt/c/Users/<USER>/jekyll-blog-container/ myblog
     ```
 
 2. **Navigate to the Directory:**
