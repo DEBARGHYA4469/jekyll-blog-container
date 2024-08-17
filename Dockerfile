@@ -5,7 +5,7 @@ FROM ruby:3.1
 RUN apt-get update -qq && apt-get install -y nodejs vim && apt-get clean
 
 # Set the working directory
-WORKDIR myblog
+WORKDIR /home/dkundu/myblog
 
 # Copy the Gemfile and Gemfile.lock
 COPY Gemfile ./

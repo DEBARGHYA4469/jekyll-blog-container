@@ -23,9 +23,9 @@ Welcome to the Jekyll Blog Containerization project! This project provides a Doc
 
 1. **Create a Symlink:**
 
-   If you’re using Windows with WSL, create a symlink to the cloned repository. Open your WSL terminal and run:
+   If you’re using Windows with WSL, create a symlink to the cloned repository. Open your WSL terminal and run: (note: Here <USER> is your windows username)
     ```bash
-    ln -s /mnt/c/<Cloned-Repo-Path> myblog
+    ln -s /mnt/c/Users/<USER>/jekyll-blog-container/* myblog
     ```
 
 2. **Navigate to the Directory:**
@@ -33,15 +33,16 @@ Welcome to the Jekyll Blog Containerization project! This project provides a Doc
     ```bash
     cd myblog
     ```
+3. [Important] Change the `$WORKDIR` in Dockerfile and `volumes` in docker-compose.yaml file based on your username. 
 
-3. **Start the Docker Containers:**
+4. **Start the Docker Containers:**
 
     Build and start the Docker containers with:
     ```bash
     docker-compose up --build
     ```
 
-4. **Access Your Blog:**
+5. **Access Your Blog:**
 
    Open your web browser and go to [http://localhost:5000//jekyll-blog-container](http://localhost:5000//jekyll-blog-container) to view your blog.
 
