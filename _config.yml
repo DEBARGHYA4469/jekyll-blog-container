@@ -22,7 +22,7 @@ title: My Awesome Personal Website
 email: johndoe@myemail.in
 description: >- # this means to ignore newlines until "baseurl:"
   My personal blogging site!
-baseurl: "/demo-blog" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-blog-container" # the subpath of your site, e.g. /blog
 url: "https://debarghya4469.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 defaults:
